@@ -44,5 +44,5 @@ install homebrew/php/composer
 # brew cask
 tap caskroom/cask
 install brew-cask
-cask install google-chrome firefox opera opera-next aurora alfred iterm2 evernote slack harvest onepassword vagrant dropbox spectacle sequel-pro
+cask install rdio google-chrome firefox opera opera-next aurora alfred iterm2 evernote slack harvest onepassword vagrant dropbox spectacle sequel-pro
 cask alfred link
