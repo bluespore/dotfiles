@@ -31,8 +31,8 @@ install php55-crypto
 install homebrew/php/composer
 
 # install hhvm 
-tap mcuadros/homebrew-hhvm
-install hhvm
+# tap mcuadros/homebrew-hhvm
+# install hhvm
 
 # install go
 install go
