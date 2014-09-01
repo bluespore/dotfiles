@@ -11,7 +11,7 @@ includes AWS packages, more use of Brewfiles rather than calling brew install an
 Run this:
 
 ```sh
-git clone https://github.com/markseddon/dotfiles.git ~/.dotfiles
+git clone https://github.com/bluespore/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
