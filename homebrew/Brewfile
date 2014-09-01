@@ -30,7 +30,7 @@ install rbenv-gem-rehash
 # install PHP 5.5 and composer
 tap homebrew/homebrew-php
 install php55
-install php55-intl
+# install php55-intl
 install php55-crypto
 install homebrew/php/composer
 
