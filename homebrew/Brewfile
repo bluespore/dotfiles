@@ -18,10 +18,14 @@ install wget
 # Install other useful binaries
 install ack
 install git
+install git-flow 
 install node
 install tree
 install vim --override-system-vi
 install dnsmasq
+install mysql 
+install rbenv 
+install rbenv-gem-rehash
 
 # install PHP 5.5 and composer
 tap homebrew/homebrew-php
@@ -35,10 +39,10 @@ install homebrew/php/composer
 # install hhvm
 
 # install go
-install go
+# install go
 
 # brew cask
 tap caskroom/cask
 install brew-cask
-cask install google-chrome alfred iterm2 evernote slack harvest onepassword vagrant dropbox spectacle postgresql 
+cask install google-chrome firefox opera aurora alfred iterm2 evernote slack harvest onepassword vagrant dropbox spectacle postgresql 
 cask alfred link
