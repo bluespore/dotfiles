@@ -59,6 +59,9 @@ export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/packer/
 
+# Sublime Text Alias
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # go path
 # export GOPATH=$HOME/Projects/go/
 # export MANPATH="/usr/local/man:$MANPATH"

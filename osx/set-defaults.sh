@@ -125,6 +125,9 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input #
 ###############################################################################
 
+# Enable two-button mouse 
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
