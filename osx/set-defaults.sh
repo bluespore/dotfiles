@@ -112,14 +112,6 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
-###############################################################################
-# Login items #
-###############################################################################
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/opt/homebrew-cask/Caskroom/alfred/2.4_279/Alfred 2.app/Contents/MacOS/Alfred 2", hidden:true}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/opt/homebrew-cask/Caskroom/dropbox/latest/Dropbox.app/Contents/MacOS/Dropbox", hidden:true}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/opt/homebrew-cask/Caskroom/spectacle/0.8.5/Spectacle.app/Contents/MacOS/Spectacle", hidden:true}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/opt/homebrew-cask/Caskroom/iterm2/2.0.0/iTerm.app/Contents/MacOS/iTerm", hidden:true}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome", hidden:true}'
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input #

@@ -15,32 +15,28 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 
 ## Step 2: Run Brewfile
+Bundle brewfile doesn't work anymore - Reminder to run shell script instead.
 ```sh
-cd ~/.dotfiles/homebrew; brew bundle Brewfile
+cd ~/.dotfiles/homebrew;
 ```
 
-## Step 3: Manually run cask link, as it fails w/the script
-```sh
-brew cask alfred link
-```
-
-## Step 4: Create screenshots folder on desktop
+## Step 3: Create screenshots folder on desktop
 ```sh
 mkdir -m 777 ~/Desktop/Screenshots
 ```
 
-## Step 5: Run OSX settings script
+## Step 4: Run OSX settings script
 ```sh
 cd ~/.dotfiles/osx/ && ./set-defaults.sh
 ```
 
-## Step 6: Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
+## Step 5: Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
 ```sh
-ln -s ~/Dropbox/System/sublime-text-3/Packages/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-ln -s ~/Dropbox/System/sublime-text-3/Installed\ Packages/ Installed\ ~/Library/Application\ Support/Sublime\ Text\ 3/ Installed\ Packages
+ln -s ~/Dropbox/System/sublime-text-3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+ln -s ~/Dropbox/System/sublime-text-3/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 ```
 
-## Step 7: Set terminal colors in your `~/.bash_profile`
+## Step 6: Set terminal colors in your `~/.bash_profile`
 
 ```sh
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
