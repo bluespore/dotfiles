@@ -27,6 +27,7 @@ cd ~/.dotfiles/osx/ && ./set-defaults.sh
 ## Sublime Text
 
 _1._ Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
+
 _2._ Remove existing ST3 directories
 ```sh
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages; rm -f ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
@@ -46,6 +47,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 ```
 _2._ Import Dracula theme from Dropbox, then apply to default iTerm2 profile.
+
 _3._ Link `/.zshrc` from Dropbox
 ```sh
 ln -s ~/Dropbox/System/zsh/zshrc.symlink ~/.zshrc
