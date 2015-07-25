@@ -24,6 +24,18 @@ _1._ Run the system defaults script
 cd ~/.dotfiles/osx/ && ./set-defaults.sh
 ```
 
+## Dev tools
+
+_1._ Install required tools
+```sh
+rbenv install 2.2.2; rbenv global 2.2.2; npm install -g bower; npm install -g grunt-cli; curl -sS https://getcomposer.org/installer | php -- --filename=composer; exit;
+```
+
+_2._ Install Sass after Terminal exits, so correct Ruby version is running through rbenv
+```sh
+gem install sass
+```
+
 ## Sublime Text
 
 _1._ Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
