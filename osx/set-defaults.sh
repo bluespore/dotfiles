@@ -98,6 +98,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
+mkdir -m 777 ~/Desktop/Screenshots
 defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
@@ -117,7 +118,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input #
 ###############################################################################
 
-# Enable two-button mouse 
+# Enable two-button mouse
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
 
 # Trackpad: enable tap to click for this user and for the login screen

@@ -1,50 +1,56 @@
-# Dotfiles, bro
-
-As with all dotfile repos, the instructions are specific to his/her own personal set up and it is advised that you fork and modify as necessary.
+# Back up and running
 
 __Clone the repo__
+
 ```sh
 git clone https://github.com/bluespore/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
-_NB. running `script/bootstrap` doesn't seem to work as expected. Kill the process when it hangs on 'installing dependencies'_
+## Homebrew
 
-## Step 1: Install Homebrew and run doctor
+1. Install Homebrew and run doctor
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; brew doctor
 ```
-
-## Step 2: Run Brewfile
-Bundle brewfile doesn't work anymore - Reminder to run shell script instead.
+2. Run `brew_setup.sh`
 ```sh
-cd ~/.dotfiles/homebrew;
+cd ~/.dotfiles/homebrew; ./install.sh
 ```
 
-## Step 3: Create screenshots folder on desktop
-```sh
-mkdir -m 777 ~/Desktop/Screenshots
-```
+## System
 
-## Step 4: Run OSX settings script
+1. Run the system defaults script
 ```sh
 cd ~/.dotfiles/osx/ && ./set-defaults.sh
 ```
 
-## Step 5: Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
+## Sublime Text
+
+1. Sync your Dropbox 'System' folder. Once completed, sync your Sublime Text settings
+2. Remove existing ST3 directories
 ```sh
-ln -s ~/Dropbox/System/sublime-text-3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-ln -s ~/Dropbox/System/sublime-text-3/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages; rm -f ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+```
+3. Link Dropbox to Application Support
+```sh
+ln -s ~/Dropbox/System/sublime-text-3/Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Packages; ln -s ~/Dropbox/System/sublime-text-3/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 ```
 
-## Step 6: Set terminal colors in your `~/.bash_profile`
+## CLI
 
+1. Enable colours in `~/.bash_profile`
 ```sh
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 ```
+2. Import Dracula theme from Dropbox, then apply to default iTerm2 profile.
+3. Link `/.zshrc` from Dropbox
+```sh
+ln -s ~/Dropbox/System/zsh/zshrc.symlink ~/.zshrc
+```
 
-Some OSX settings will require you to restart your session, so logout and log back in afterwards.
+---
 
-Thanks, [Zach Holman](https://github.com/holman) for your [dotfiles](https://github.com/holman/dotfiles)!
+_Note:_ Some OSX settings will require you to restart your session, so logout and log back in afterwards.
