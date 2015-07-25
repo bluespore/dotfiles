@@ -1,6 +1,6 @@
 # Back up and running
 
-__Clone the repo__
+## Clone the repo
 
 ```sh
 git clone https://github.com/bluespore/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
