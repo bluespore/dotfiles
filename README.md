@@ -60,7 +60,12 @@ alias ls='ls -GFh'
 ```
 _2._ Import Dracula theme from Dropbox, then apply to default iTerm2 profile.
 
-_3._ Link `/.zshrc` from Dropbox
+_3._ Install ohmyzsh
+```sh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+_4._ Link `/.zshrc` from Dropbox
 ```sh
 ln -s ~/Dropbox/System/zsh/zshrc.symlink ~/.zshrc
 ```
